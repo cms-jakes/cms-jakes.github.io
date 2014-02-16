@@ -3,15 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CMS-JakeS</title>
         <meta name="description" content="The source of all my maddness.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css" rel="stylesheet">
+		<script src="js/respond.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -19,36 +20,58 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="banner_top">
+<div class="container">
+        <div class="jumbotron">
+        	<img src="images/jakestandish.png" class="pull-right hidden-xs img-responsive img-rounded img-thumbnail">
             <H1>Jake Standish</H1>
             <h3><i>Instructional Technology Specialist</i></h3>
             <h2>Charlotte Mecklenburg Schools</h2>
         </div>
-        <div>
-            <div class="left">
-                <h2> Achievements </h2>
-                <h2> Ideas </h2>
-                <h2> Whatever </h2>
-            </div>
-            <div class="right">
-                <h2><h2>
-        
+<div class="row">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-chevron-down"</span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="collapse">				
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li class="dropdown"><a href="#" data-toggle="dropdown">Achievements <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">badges</a></li>
+						<li><a href="#">awards</a></li>
+						<li><a href="#">certifications</a></li>
+					</ul>
+				</li>
+				
+				<li class="dropdown"><a href="#" data-toggle="dropdown">Ideas <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://jakestandish42.github.io/">blog</li>
+						<li><a href="#">projects</a></li>
+						<li><a href="#">ect</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Whatever</a></li>
+			</ul>
+		</div>
+</nav>
+<div class="row">
+		<div class="col-xs-12">
+			<div>
+        	    <div>
+            	    <h2>Body<h2>
+            	</div>
             </div>
         </div>
+</div>
+</div> <!-- container -->
+<!-- javaScript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
     </body>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+		
 </html>

@@ -1,0 +1,25 @@
+/* Custom CSS file */
+body {
+	padding-top: 70px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-inverse .navbar-toggle {
+	color:white;
+	font-weight:bold;
+	border-color: white;
+}
+.nabar-inverse .navbar-toggle:hover {
+	background-color: #eee;
+	color: #333;
+}
+
+.navbar-inverse .navbar-toggle .glyphicon {
+	color: white;
+}
+.navbar-inverse .navbar0togge:hover .glyphicon {
+	color: #333;
+}
+
